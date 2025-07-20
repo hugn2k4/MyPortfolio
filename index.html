@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #12212b">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="preload" href="script.js" as="script" />
+    <link rel="preload" href="./images/about-me/avata.jpg" as="image" />
+    <!-- Load CSS and JS -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="icons/icon.ico" type="image/x-icon" />
+    <title>Le Cong Hung | Front-end Developer</title>
+  </head>
+  <body style="background-color: #12212b; margin: 0; padding: 0">
+    <div class="container" id="container">
+      <!-- Header Section -->
+      <header class="header">
+        <a href="#home" class="logo">HungCL.</a>
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+      <!-- Home Section -->
+      <section class="home" id="home">
+        <div class="home-content">
+          <h1>
+            <span class="static-text">Hi, </span
+            ><span class="typing-text">I'm Le Cong Hung</span>
+          </h1>
+          <h3>Front-end Developer</h3>
+          <p>
+            I’m a third-year Information Technology student on the path to
+            becoming a professional Front-End Developer. <br />I enjoy building
+            intuitive and user-friendly web interfaces and constantly strive to
+            enhance user experiences. I'm continuously improving my skills in
+            design, development, and teamwork to be ready for real-world
+            environments.<br />
+            Feel free to contact me if you have any questions or collaboration
+            opportunities.
+          </p>
+          <div class="social-media">
+            <a href="https://www.facebook.com/HCL2k4/" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/hcl2k4/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://www.tiktok.com/@z1h0on" target="_blank"
+              ><i class="bx bxl-tiktok"></i>
+            </a>
+            <a href="https://zalo.me/0945396133" target="_blank"
+              ><i class="bx bxs-phone"></i
+            ></a>
+            <a href="https://github.com/hugn2k4" target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
+          <a
+            href="./assets/CV_LeCongHung_Front-en_Deverloper.pdf"
+            download
+            class="btn-download-cv"
+            >Download CV</a
+          >
+        </div>
+        <div class="home-image">
+          <img src="./images/about-me/avata.jpg" alt="Avata Image" />
+        </div>
+      </section>
+      <!-- About Section -->
+      <section class="about" id="about">
+        <div class="about-container">
+          <div class="about-header">
+            <h2>About Me</h2>
+            <p>
+              Get to know more about who I am, what I do, and what inspires me
+            </p>
+          </div>
+
+          <div class="about-content">
+            <div class="about-personal">
+              <div class="about-image-gallery">
+                <div class="main-image">
+                  <img src="" alt="" id="mainImage" />
+                  <div class="image-overlay">
+                    <button class="prev-btn" id="prevBtn">
+                      <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <button class="next-btn" id="nextBtn">
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+                    <div class="auto-play-toggle">
+                      <button id="autoPlayBtn" class="auto-play-btn">
+                        <i class="bx bx-pause"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery-grid">
+                  <!-- Images will be dynamically loaded by JavaScript -->
+                </div>
+                <div class="gallery-indicators">
+                  <div class="indicators">
+                    <!-- Indicators will be dynamically loaded by JavaScript -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="personal-info">
+                <h3>Personal Information</h3>
+                <div class="info-grid">
+                  <div class="info-item">
+                    <span class="info-label">Full Name:</span>
+                    <span class="info-value">Lê Công Hùng</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Age:</span>
+                    <span class="info-value" id="age">20 years old</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Date of Birth:</span>
+                    <span class="info-value">October 10, 2004</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span class="info-value"
+                      >Thu Duc, Ho Chi Minh City, Vietnam</span
+                    >
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Education:</span>
+                    <span class="info-value"
+                      >Information Technology Student (3rd Year)</span
+                    >
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">University:</span>
+                    <span class="info-value"
+                      >HCMC University of Technology and Education</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-details">
+              <div class="detail-section">
+                <h3><i class="bx bx-user"></i> Who I Am</h3>
+                <p>
+                  I'm a passionate third-year Information Technology student,
+                  specializing in front-end development. My journey started with
+                  a simple curiosity — “How do websites actually work?” — and
+                  quickly grew into a deep passion for creating responsive,
+                  accessible, and user-friendly interfaces. I love turning
+                  design ideas into smooth, interactive web experiences using
+                  technologies like React, Tailwind CSS, and Next.js. I'm
+                  especially interested in the balance between design and logic
+                  — how layout, performance, and usability work together.
+                  Outside the classroom, I work on personal and collaborative
+                  projects to sharpen my skills and stay current with industry
+                  trends. I’m always learning, experimenting, and refining my
+                  problem-solving abilities. I believe good code is clean,
+                  reusable, and user-focused. My goal is not only to become a
+                  front-end developer, but a creative builder who contributes to
+                  meaningful digital experiences that delight users and make a
+                  difference.
+                </p>
+              </div>
+
+              <div class="detail-section">
+                <h3><i class="bx bx-heart"></i> My Interests</h3>
+                <div class="interests-grid">
+                  <div class="interest-item">
+                    <i class="bx bx-code-alt"></i>
+                    <span>Web Development</span>
+                  </div>
+                  <div class="interest-item">
+                    <i class="bx bx-palette"></i>
+                    <span>UI/UX Design</span>
+                  </div>
+                  <div class="interest-item">
+                    <i class="bx bx-mobile"></i>
+                    <span>Mobile Apps</span>
+                  </div>
+                  <div class="interest-item">
+                    <i class="bx bx-game"></i>
+                    <span>Gaming</span>
+                  </div>
+                  <div class="interest-item">
+                    <i class="bx bx-music"></i>
+                    <span>Music</span>
+                  </div>
+                  <div class="interest-item">
+                    <i class="bx bx-camera"></i>
+                    <span>Photography</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail-section">
+                <h3><i class="bx bx-target-lock"></i> Career Goals</h3>
+                <div class="career-goals">
+                  <div class="goal-item">
+                    <div class="goal-icon">
+                      <i class="bx bx-trending-up"></i>
+                    </div>
+                    <div class="goal-content">
+                      <h4>Short-term Goal</h4>
+                      <p>
+                        Master modern front-end frameworks and build impressive
+                        projects to enhance my portfolio
+                      </p>
+                    </div>
+                  </div>
+                  <div class="goal-item">
+                    <div class="goal-icon">
+                      <i class="bx bx-briefcase"></i>
+                    </div>
+                    <div class="goal-content">
+                      <h4>Medium-term Goal</h4>
+                      <p>
+                        Secure a position as a Junior Front-end Developer in a
+                        dynamic tech company
+                      </p>
+                    </div>
+                  </div>
+                  <div class="goal-item">
+                    <div class="goal-icon">
+                      <i class="bx bx-rocket"></i>
+                    </div>
+                    <div class="goal-content">
+                      <h4>Long-term Goal</h4>
+                      <p>
+                        Become a Full-stack Developer and eventually lead
+                        development teams on innovative projects
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills" id="skills">
+        <div class="skills-container">
+          <div class="skills-header">
+            <h2>My Skills</h2>
+            <p>
+              Here are the technologies and tools I work with to bring ideas to
+              life
+            </p>
+          </div>
+
+          <div class="skills-content">
+            <div class="skills-category">
+              <h3><i class="bx bx-code-alt"></i>Frontend Development</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="bx bxl-html5"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>HTML5</h4>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="80%"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="bx bxl-css3"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>CSS3</h4>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="70%"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="bx bxl-javascript"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>JavaScript</h4>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="75%"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="bx bxl-react"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>React</h4>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="70%"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <h3><i class="bx bx-server"></i>Backend & Database</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="bx bxl-nodejs"></i>
+                  </div>
+
+                  <div class="skill-info">
+                    <h4>Node.js</h4>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="40%"></div>
+                    </div>
+                    <span class="skill-percentage">40%</span>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="bx bxl-java"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>Java Spring Boot</h4>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="40%"></div>
+                    </div>
+                    <span class="skill-percentage">40%</span>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="bx bx-data"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>MySQL</h4>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="65%"></div>
+                    </div>
+                    <span class="skill-percentage">65%</span>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="bx bx-server"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>SQL Server</h4>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="65%"></div>
+                    </div>
+                    <span class="skill-percentage">65%</span>
+                  </div>
+                </div>
+
+                <!-- <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="bx bxl-mongodb"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>MongoDB</h4>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="55%"></div>
+                    </div>
+                    <span class="skill-percentage">55%</span>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <h3><i class="bx bx-palette"></i>Design & Tools</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="bx bxl-figma"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>Figma</h4>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="40%"></div>
+                    </div>
+                    <span class="skill-percentage">40%</span>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="bx bxl-git"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>Git</h4>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="65%"></div>
+                    </div>
+                    <span class="skill-percentage">65%</span>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="bx bx-desktop"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>Responsive Design</h4>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="55%"></div>
+                    </div>
+                    <span class="skill-percentage">55%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects" id="projects">
+        <div class="projects-container">
+          <div class="projects-header">
+            <h2>My Projects</h2>
+            <p>
+              Here are some of the projects I've worked on that showcase my
+              skills and experience
+            </p>
+          </div>
+
+          <div class="projects-content">
+            <div class="projects-grid">
+              <!-- Projects will be dynamically loaded by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <div class="contact-container">
+          <div class="contact-header">
+            <h2>Get In Touch</h2>
+            <p>
+              Ready to start your next project? Let's work together to create
+              something amazing!
+            </p>
+          </div>
+
+          <div class="contact-content">
+            <div class="contact-info-section">
+              <h3>Contact Information</h3>
+              <div class="contact-info-grid">
+                <div class="contact-card">
+                  <div class="contact-icon">
+                    <i class="bx bx-phone"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Phone</h4>
+                    <p>+84 945 396 133</p>
+                  </div>
+                </div>
+
+                <div class="contact-card">
+                  <div class="contact-icon">
+                    <i class="bx bx-envelope"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Email</h4>
+                    <p>hungcl.dev@gmail.com</p>
+                  </div>
+                </div>
+
+                <div class="contact-card">
+                  <div class="contact-icon">
+                    <i class="bx bx-location-plus"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Location</h4>
+                    <p>Thu Duc, Ho Chi Minh City</p>
+                  </div>
+                </div>
+
+                <div class="contact-card">
+                  <div class="contact-icon">
+                    <i class="bx bx-time"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Response Time</h4>
+                    <p>Within 24 hours</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-social">
+                <h4>Follow Me</h4>
+                <div class="contact-social-links">
+                  <a
+                    href="https://www.facebook.com/HCL2k4/"
+                    target="_blank"
+                    aria-label="Facebook"
+                  >
+                    <i class="bx bxl-facebook"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/hcl2k4/"
+                    target="_blank"
+                    aria-label="Instagram"
+                  >
+                    <i class="bx bxl-instagram"></i>
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@z1h0on"
+                    target="_blank"
+                    aria-label="Zalo"
+                  >
+                    <i class="bx bxl-tiktok"></i>
+                  </a>
+                  <a
+                    href="https://zalo.me/0945396133"
+                    target="_blank"
+                    aria-label="Zalo"
+                  >
+                    <i class="bx bxs-phone"></i>
+                  </a>
+                  <a
+                    href="https://github.com/hugn2k4"
+                    target="_blank"
+                    aria-label="GitHub"
+                  >
+                    <i class="bx bxl-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-section">
+              <h3>Send Message</h3>
+              <form class="contact-form">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn-send">
+                  <i class="bx bx-send"></i>
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="footer-section">
+              <h3>Le Cong Hung</h3>
+              <p>
+                Passionate Front-end Developer creating innovative and
+                user-friendly web solutions.
+              </p>
+              <div class="footer-social">
+                <a href="https://www.facebook.com/HCL2k4/" target="_blank"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/hcl2k4/" target="_blank"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a href="https://www.tiktok.com/@z1h0on" target="_blank"
+                  ><i class="bx bxl-tiktok"></i
+                ></a>
+                <a href="https://zalo.me/0945396133" target="_blank"
+                  ><i class="bx bxs-phone"></i
+                ></a>
+                <a href="https://github.com/hugn2k4" target="_blank"
+                  ><i class="bx bxl-github"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-section">
+              <h4>Contact Info</h4>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <i class="bx bx-location-plus"></i>
+                  <span>Thu Duc, Ho Chi Minh City, Vietnam</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bx bx-phone"></i>
+                  <span>+84 945 396 133</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bx bx-envelope"></i>
+                  <span>hungcl.dev@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>&copy; 2025 Le Cong Hung. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal">
+      <div class="modal-content">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <img class="modal-image" id="modalImage" src="" alt="" />
+        <div class="modal-nav">
+          <button class="modal-prev" id="modalPrev">
+            <i class="bx bx-chevron-left"></i>
+          </button>
+          <button class="modal-next" id="modalNext">
+            <i class="bx bx-chevron-right"></i>
+          </button>
+        </div>
+        <div class="modal-indicators" id="modalIndicators"></div>
+      </div>
+    </div>
+  </body>
+</html>
