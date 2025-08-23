@@ -42,7 +42,7 @@ MyPortfolio/
 
 ## 🌐 Live Demo
 
-Visit the live website: [Your Portfolio URL]
+Visit the live website: (https://hugn2k4.github.io/MyPortfolio/)
 
 ## 📱 Responsive Breakpoints
 
@@ -73,7 +73,7 @@ To customize this portfolio for your own use:
 - **Email**: hungcl.dev@gmail.com
 - **Phone**: +84 945 396 1333
 - **Location**: Ho Chi Minh City, Vietnam
-- **GitHub**: [\[Your GitHub Profile\]](https://github.com/hugn2k4/)
+- **GitHub**: (https://github.com/hugn2k4/)
 
 ## 📄 License
 
