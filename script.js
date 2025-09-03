@@ -723,7 +723,7 @@ function smoothSectionTransitions() {
 // Initialize all animations
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize magnetic buttons
-  initMagneticButtons();
+  // initMagneticButtons();
 
   // Set initial state for sections
   const sections = document.querySelectorAll("section");
