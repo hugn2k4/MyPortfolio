@@ -669,6 +669,8 @@ function revealOnScroll() {
 }
 
 // Magnetic Button Effect
+
+/*
 function initMagneticButtons() {
   const magneticButtons = document.querySelectorAll(
     ".btn-download-cv, .btn-send"
@@ -690,6 +692,7 @@ function initMagneticButtons() {
     });
   });
 }
+*/
 
 // Parallax Effect on Scroll
 function parallaxScroll() {
